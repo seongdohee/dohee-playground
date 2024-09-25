@@ -10,7 +10,7 @@ import {
   sunglasses,
   introduceText,
   heroWrapper, deco
-} from './page.css.ts';
+} from './page.css';
 import {useEffect} from 'react';
 import Image from 'next/image';
 import profileImage from '@/assets/images/profile.jpg';
@@ -32,7 +32,7 @@ export default function Home() {
         <div className={view}>
           <div className={heroWrapper}>
             <div className={innerCircle}>
-              <Image src={profileImage} width={400}/>
+              <Image src={profileImage} width={400} alt="profile 이미지"/>
               <div className={sunglasses}>🕶️</div>
             </div>
             <span className={deco} style={{ top: 50, right: 20 }}>🧚</span>
